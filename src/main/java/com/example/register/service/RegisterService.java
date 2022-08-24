@@ -1,10 +1,11 @@
 package com.example.register.service;
 
-import com.example.register.entity.Register;
+import com.example.register.domain.RegisterDomain;
+import com.example.register.domain.RegisterResponse;
 
 public interface RegisterService {
-	public Register saveRegister(Register cMobileNo);
-	public Registers getRegister(Integer cMobileNo);
-	public Iterable<Registers> getAllcMobileNo();
+	public RegisterResponse saveRegister(RegisterDomain registerInformation);
+	//public Registers getRegister(Integer cMobileNo);
+	//public Iterable<Registers> getAllcMobileNo();
 
 }
